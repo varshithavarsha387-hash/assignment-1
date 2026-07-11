@@ -1,0 +1,12 @@
+ Job Registration Form Validation
+
+ Description
+This project is a Job Registration Form that validates the name, email, and contact number using regular expressions. If all inputs are valid, the message **"Registered Successfully"** is displayed; otherwise, appropriate error messages are shown.
+
+ Technologies Used
+* HTML
+* CSS
+* JavaScript
+
+How to Run
+Open `index.html` in any web browser, fill in the form, and submit to check the validation.
