@@ -1,0 +1,12 @@
+Bank Loan EMI Calculator
+
+Description
+This project is a simple web application that allows customers to enter their name, occupation, loan amount, interest rate, and loan tenure. After submitting the form, the monthly EMI is calculated and displayed.
+
+Technologies Used
+* HTML
+* CSS
+* JavaScript
+
+How to Run
+Open `index.html` in any web browser and enter the required details to calculate the EMI.
