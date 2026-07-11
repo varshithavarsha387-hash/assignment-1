@@ -1,0 +1,11 @@
+Job Registration Form
+
+Description
+This project is a static HTML job registration form that collects applicant details such as name, gender, languages known, email, contact number, address, preferred job location, applicant description, and CV upload. It also includes Submit and Reset buttons.
+
+Technologies Used
+* HTML
+* CSS
+
+How to Run
+Open `index.html` in any web browser to use the registration form.
