@@ -1,0 +1,15 @@
+Online Mobile Store
+Description
+
+This is a static web page created using HTML. The home page displays a table of mobile products with links. Each link opens a separate page containing the product image, features, and a short demonstration video.
+
+Technologies Used
+* HTML
+* CSS
+
+How to Run
+1. Download or clone the project.
+2. Open `index.html` in any web browser.
+3. Click on a product link to view its details.
+
+
