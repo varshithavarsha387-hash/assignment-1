@@ -1,0 +1,91 @@
+ <html>
+<head>
+    <title>SBI EMI Calculator</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        input[type=text]{
+            width:100%;
+            border:2px solid black;
+            background-color:rgb(255, 196, 225);
+            padding:10px;
+            margin:20px 0;
+            font-size:20px;
+            box-sizing:border-box;
+        }
+        input[type=number]{
+            width:100%;
+            border:2px solid black;
+            background-color:rgb(255, 196, 235);
+            padding:10px;
+            margin:20px 0;
+            font-size:20px;
+            box-sizing:border-box;
+        }
+        input[type=submit]{
+            border:2px solid black;
+            background-color:rgb(0, 115, 128);
+            color:white;
+            padding:15px;
+            margin:20px 0;
+            font-size:20px;
+            cursor:pointer;
+        }
+#result{
+            font-size:24px;
+            font-weight:bold;
+            margin-top:20px;
+        }
+
+        form{
+            width:50%;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>SBI EMI CALCULATOR</h2>
+
+    <form onsubmit="calculate(); return false;">
+        Name
+        <input type="text" placeholder="Enter your name">
+
+        Occupation
+        <input type="text" placeholder="Enter your occupation">
+
+        Loan Amount
+        <input type="number" id="amount" placeholder="Enter your loan amount" required>
+
+        Interest Rate (% per annum)
+        <input type="number" id="ir" placeholder="Enter interest rate" required>
+
+        Tenure in Years
+        <input type="number" id="time" placeholder="Enter tenure" required>
+
+        <input type="submit" value="Calculate EMI">
+    </form>
+
+    <p id="result" align="center"></p>
+
+    <script>
+        function calculate()
+        {
+            var A = Number(document.getElementById("amount").value);
+            var interest = Number(document.getElementById("ir").value);
+            var tenure = Number(document.getElementById("time").value);
+
+            var mir = interest / (12 * 100);
+            var n = tenure * 12;
+
+            var emi = (A * mir * Math.pow(1 + mir, n)) /
+                      (Math.pow(1 + mir, n) - 1);
+
+            document.getElementById("result").innerHTML =
+                "Monthly EMI = ₹" + emi.toFixed(2);
+        }
+    </script>
+<h3 align="center">K.VARSHITHA 24881A1237</h3>
+</body>
+</html>
