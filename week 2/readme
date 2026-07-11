@@ -1,0 +1,10 @@
+Home Page with Nested Frames
+Description
+This project is a static web page designed using HTML and CSS. It includes nested frames with a title frame, an index frame containing navigation links, and a content frame that displays the selected web pages. Inline, embedded, and external CSS styles are used where appropriate.
+
+Technologies Used
+ HTML
+* CSS
+
+How to Run
+Open `index.html` in any web browser to view the project.
